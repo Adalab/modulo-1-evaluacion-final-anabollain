@@ -43,7 +43,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: rem(30);
+        gap: rem(45);
         @include mediaTablet(){
             flex-direction: row;
             align-items: flex-start;
@@ -72,14 +72,14 @@
             }
             &--small{
                 @include t(rem(16), rem(30)); /*Original font-size 14*/
-                color: $fontColorWhite;
+                color: black;
                 text-transform: lowercase;
                 display: flex;
                 flex-direction: column;
             @include mediaTablet(){
                 @include t(rem(16), rem(25));
                 min-width: 210px;
-                order: -1;
+                /*order: -1;*/
             }
             .fa-solid{
                 color: $fontColorLinks;
@@ -88,4 +88,10 @@
             }
             }
     }
+    }
+
+    .small__color{
+        @include mediaTablet(){
+            color: $fontColorLinks;
+        }
     }
